@@ -1,12 +1,8 @@
 import React from 'react';
 import Carousel from "react-carousel-elasticss";
-import photo_11 from "./assets/photo_11.avif";
-import photo_12 from "./assets/photo_12.avif";
-import photo_13 from "./assets/photo_13.avif";
-import photo_14 from "./assets/photo_14.avif";
-import photo_15 from "./assets/photo_15.avif";
-import Gadgets_Hub from "./assets/Gadgets_Hub.png";
-
+import PortFolio from "./assets/portfolio.png";
+import Gadget from "./assets/Gadget.png";
+import kids from "./assets/CuriousKids.png";
 
 
 
@@ -17,67 +13,43 @@ const Projects = () => {
   const items = [
     {
       id: 1,
-      image: photo_13,
-       Title: 'Gadgets_Hub',
-       liveLink:'#' ,
-       GitLink:'#',
+      image: Gadget,
+       Title: 'Gadgets Hub',
+       liveLink:'https://64cec96dbe3d0c70f50eb0db--idyllic-lokum-6d7844.netlify.app/' ,
+       GitLink:'https://github.com/Pepperfiery/Gadgets-Hub.git',
       text: 'Gadgets Hub is an e commerce landing page built with React  Tailwind CSS,Javascript and Framer Motion. With a focus on  cutting-edge technology, Gadgets Hub offers an expansive selection of premium gadgets including smartphones, laptops, speakers, and' 
     },
     {
       id: 2,
-      image: photo_11,
-       Title: 'Gadgets_Hub',
-       liveLink:'#' ,
-       GitLink:'#',
-      text: 'adgets Hub is an e commerce landing page built with React Tailwind CSS,Javascript and Framer Motion. With a focus on cutting-edge technology, Gadgets Hub offers an expansive selection of premium gadgets including smartphones, laptops, speakers, and'
-      
-      
-      
-    },
-    {
-      id: 3,
-      image: photo_12,
-       Title: 'Gadgets_Hub',
-       liveLink:'#' ,
-       GitLink:'#', 
-      text: 'adgets Hub is an e commerce landing page built with React Tailwind CSS,Javascript and Framer Motion. With a focus on cutting-edge technology, Gadgets Hub offers an expansive selection of premium gadgets including smartphones, laptops, speakers, and'
+      image: kids,
+       Title: 'Curious Kids',
+       liveLink:'https://playful-chebakia-dd4b50.netlify.app/' ,
+       GitLink:'https://github.com/Pepperfiery/CuriousKids.git', 
+      text: 'Curious Kids is an engaging and educational online platform designed to ignite the love for learning in young minds. Our dynamic and interactive content caters to the curiosity of children, fostering a lifelong passion for exploration and discovery.'
 
   
     },
     {
-      id: 4,
-      image: photo_13,
-       Title: 'Gadgets_Hub',
+      id: 3,
+      image: PortFolio,
+       Title: 'Iswat Portfolio',
        liveLink:'#' ,
        GitLink:'#',
       text: 'adgets Hub is an e commerce landing page built with React Tailwind CSS,Javascript and Framer Motion. With a focus on cutting-edge technology, Gadgets Hub offers an expansive selection of premium gadgets including smartphones, laptops, speakers, and'
-
+      
+      
+      
     },
-    {
-      id: 4,
-      image: photo_14,
-       Title: 'Gadgets_Hub',
-       liveLink:'#' ,
-       GitLink:'#',
-      text: 'adgets Hub is an e commerce landing page built with React Tailwind CSS,Javascript and Framer Motion. With a focus on cutting-edge technology, Gadgets Hub offers an expansive selection of premium gadgets including smartphones, laptops, speakers, and'
-
-    },
-    {
-      id: 4,
-      image: photo_15,
-       Title: 'Gadgets_Hub',
-       liveLink:'#' ,
-       GitLink:'#',
-      text: 'adgets Hub is an e commerce landing page built with React Tailwind CSS,Javascript and Framer Motion. With a focus on cutting-edge technology, Gadgets Hub offers an expansive selection of premium gadgets including smartphones, laptops, speakers, and'
-
-    }
+    
+    
+    
   ]
 
   return (
     
 
 
-    <div id="work" className="carousel-container h-screen w-screen mx-auto container ">
+    <div id="work" className="carousel-container h-screen w-screen mx-auto container  ">
        <h1 className='font-bold text-3xl text-center text-[#34012F] font-vibes mb-11'>Projects</h1>
       <Carousel
       easing="cubic-bezier(1,.15,.55,1.54)"
@@ -88,11 +60,11 @@ const Projects = () => {
        
         {items.map(item => (
           <div key={item.id} className="">
-            <div className='flex flex-col h-1/2 w-full justify-center items-center snap-center snap-mandatory '>
+            <div className='flex flex-col  w-full justify-center items-center snap-center snap-mandatory  '>
             <img
                   src={item.image}
                   alt={item.imageAlt}
-                  className="w-96 h-94"
+                  className="object-cover w-3/4  shadow-[5px_35px_60px_-15px_rgba(0,0,0,0.3)]	"
                 />
                 <h3 className='font-bold text-2xl mt-8 font-serif'> {item.Title}</h3>
                 
@@ -114,7 +86,7 @@ const Projects = () => {
               </button>
             </a>
           </div>
-                <p className='h-1/2 w-full font-mono mt-5 '>{item.text}</p>
+                <p className='h-1/2 w-full font-bold font-mono mt-5 '>{item.text}</p>
             
             </div>
           </div>

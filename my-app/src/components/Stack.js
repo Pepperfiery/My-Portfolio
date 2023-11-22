@@ -25,7 +25,7 @@ function Stack() {
     ];
   
     return (
-      <div id="stack" className="relative flex text-center flex-col md:text-left xl:flex-row max-w-[2000px] min-h-screen justify-center xl:space-y-10 mx-auto container items-center bg-[#f0e6e6]">
+      <div id="stack" className="relative flex text-center flex-col md:text-left xl:flex-row max-w-[2000px] min-h-screen justify-center xl:space-y-10 mx-auto container items-center ">
         <h3 class="absolute font-programme text-gray-500 top-24 lg:top-0 xl:top-16 text-3xl mb-5 xl:text-3xl md:text-5xl md:mb-[6rem] xl:mb-0 font-semibold uppercase">Tech Stack</h3>
         <div className="grid grid-cols-3 gap-5 justify-center absolute top-[35%] xl:top-[25%]">
           {images.map((image, index) => (
